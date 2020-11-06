@@ -1,0 +1,96 @@
+{
+  /* *********************************************************************** *\
+  Editor Functionality Settings
+  \* *********************************************************************** */
+  "editor.tabSize": 2, // I always use 2 spaces.
+  "files.autoSave": "off", // Manual auto save, can exit if I make a mistake.
+  "explorer.confirmDelete": false, // Stop asking for delete confirmation.
+  "explorer.confirmDragAndDrop": false, // Stop asking for drag & drop confirmation.
+  "workbench.startupEditor": "newUntitledFile", // Just open a new file at startup.
+  "javascript.validate.enable": false, // Setting for Standardjs plugin.
+  "editor.suggestSelection": "first", // Always select the first one.
+  "workbench.editor.scrollToSwitchTabs": true, // Enable switching tabs by scrolling.
+  "editor.cursorBlinking": "smooth", // Microsoft Word like behavior.
+  "editor.cursorSmoothCaretAnimation": true, // Microsoft Word like behavior.
+
+  /* *********************************************************************** *\
+  Editor Visual Settings
+  \* *********************************************************************** */
+  // Theme Settings and Overwrites
+  "workbench.colorTheme": "One Dark Pro", // One Dark Pro Gang
+  "workbench.iconTheme": "material-icon-theme", // Material icons.
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#F0DB4F", // JavaScript colored cursor.
+    "tab.activeBorder": "#F0DB4F" // JavaScript colored tab border.
+  },
+
+  // Fonts and Whitespace
+  "editor.fontFamily": "'Hasklug NF', Consolas, 'Courier New', monospace", // Nerdfont Hasklig.
+  "editor.fontLigatures": true, // Hasklig ligatures.
+  "editor.renderWhitespace": "all", // Show everything.
+  "editor.rulers": [
+    79 // 80 character limit ruler.
+  ],
+
+  // Minimap
+  "editor.minimap.enabled": true, // Always show the minimap.
+  "editor.minimap.showSlider": "always", // Always show the minimap view.
+
+  // Misc
+  "window.zoomLevel": 0, // Window zoom.
+  "window.menuBarVisibility": "visible", // Always show the menu.
+  "workbench.activityBar.visible": true, // Always show the menu.
+
+  // Files
+  "files.associations": {
+    ".gitignore": "properties"
+  },
+
+  /* *********************************************************************** *\
+  Terminal Settings
+  \* *********************************************************************** */
+  // https://github.com/cmderdev/cmder/wiki/Setting-up-Environment-Variables
+  "terminal.integrated.shell.windows": "cmd.exe",
+  "terminal.integrated.shellArgs.windows": [
+    "/k",
+    "%CMDER_ROOT%/vendor/bin/vscode_init.cmd"
+  ],
+
+  /* *********************************************************************** *\
+  Git Settings
+  \* *********************************************************************** */
+  // I actually have no clue why I have these settings set.
+  "git.autofetch": true,
+  "git.confirmSync": false,
+
+  /* *********************************************************************** *\
+  Extention Settings
+  \* *********************************************************************** */
+  // Global
+  "extensions.ignoreRecommendations": false, // Stop showing me recommended extentions.
+
+  // Settings Sync | Just in case.
+  // "sync.autoDownload": false,
+  // "sync.autoUpload": false,
+  // "sync.forceDownload": true,
+  // "sync.forceUpload": false,
+  // "sync.gist": "de5c88a4fc1d962453580582fb1e01ca",
+  // "sync.quietSync": false,
+  // "sync.removeExtensions": true,
+  // "sync.syncExtensions": true,
+
+  // StandardJS
+  "standard.autoFixOnSave": false, // Stop.
+  "editor.formatOnPaste": false, // STOP
+
+  // Spell Checker
+  "cSpell.userWords": [
+    "mongodb"
+  ],
+
+  // SSH
+  "remote.SSH.remotePlatform": {
+    "achlfr": "linux",
+    "root": "linux"
+  }
+}

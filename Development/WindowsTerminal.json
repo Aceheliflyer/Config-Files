@@ -1,0 +1,150 @@
+{
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "defaultProfile": "{ec4eb739-cb11-49ee-91c8-417fd5032b49}",
+  "copyOnSelect": false,
+  "copyFormatting": false,
+  "profiles": {
+    "defaults": {
+      "colorScheme": "One Half Dark",
+      "fontFace": "Hasklug NF",
+      "useAcrylic": true,
+      "acrylicOpacity": 0.75
+    },
+    "list": [
+      /* ******************************************************************* *\
+         Command Prompt & PowerShell
+      \* ******************************************************************* */
+      // https://github.com/cmderdev/cmder/wiki/Setting-up-Environment-Variables
+      {
+        "name": "Cmder",
+        "guid": "{ec4eb739-cb11-49ee-91c8-417fd5032b49}",
+        "commandline": "cmd.exe /k %cmder_root%/vendor/init.bat",
+        "startingDirectory": "C:/Users/Achlfr",
+        "icon": " %cmder_root%/icons/cmder.ico",
+        "colorScheme": "Monokai Cmder",
+        "hidden": false
+      },
+      {
+        "name": "Command Prompt",
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "commandline": "cmd.exe",
+        "hidden": false
+      },
+      {
+        "name": "Windows PowerShell",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "commandline": "powershell.exe",
+        "hidden": false
+      },
+      /* ******************************************************************* *\
+         Ubuntu
+      \* ******************************************************************* */
+      {
+        "name": "Ubuntu",
+        "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+        "source": "Windows.Terminal.Wsl",
+        "startingDirectory": "//wsl$/Ubuntu/home/aceheliflyer",
+        "hidden": false
+      },
+      /* ******************************************************************* *\
+         Kali Linux & KeX Setup
+      \* ******************************************************************* */
+      {
+        "name": "Kali Linux",
+        "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+        "source": "Windows.Terminal.Wsl",
+        "startingDirectory": "//wsl$/kali-linux/home/aceheliflyer",
+        "hidden": false
+      },
+      {
+        "name": "KeX Windowed",
+        "guid": "{da5e3d69-911e-41ca-92d6-ed6a9b45bbc0}",
+        "commandline": "wsl -d kali-linux kex --win --wtstart -s",
+        "startingDirectory": "//wsl$/kali-linux/home/aceheliflyer",
+        // "icon": "C:/Users/Achlfr/Pictures/icons/kali-menu.png",
+        "hidden": true
+      },
+      {
+        "name": "KeX Seemless",
+        "guid": "{187c17a4-8164-4d5f-85a6-ba43771cf736}",
+        "commandline": "wsl -d kali-linux kex --sl --wtstart -s",
+        "startingDirectory": "//wsl$/kali-linux/home/aceheliflyer",
+        // "icon": "C:/Users/Achlfr/Pictures/icons/kali-menu.png",
+        "hidden": true
+      },
+      /* ******************************************************************* *\
+         Miscellaneous
+      \* ******************************************************************* */
+      {
+        "name": "Azure Cloud Shell",
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "source": "Windows.Terminal.Azure",
+        "hidden": true
+      }
+    ]
+  },
+  /* *********************************************************************** *\
+    Color Schemes
+  \* *********************************************************************** */
+  "schemes": [
+    {
+      "name": "Monokai Cmder",
+      "black": "#272822",
+      "red": "#a70334",
+      "green": "#74aa04",
+      "yellow": "#b6b649",
+      "blue": "#01549e",
+      "purple": "#89569c",
+      "cyan": "#1a83a6",
+      "white": "#cacaca",
+      "brightBlack": "#7c7c7c",
+      "brightRed": "#f3044b",
+      "brightGreen": "#8dd006",
+      "brightYellow": "#cccc81",
+      "brightBlue": "#0383f5",
+      "brightPurple": "#a87db8",
+      "brightCyan": "#58c2e5",
+      "brightWhite": "#ffffff",
+      "background": "#272822",
+      "foreground": "#cacaca",
+      "selectionBackground": "#cccc81",
+      "cursorColor": "#ffffff"
+    }
+  ],
+  /* *********************************************************************** *\
+     Keybinds
+  \* *********************************************************************** */
+  "keybindings": [
+    // Copy
+    {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "keys": "ctrl+c"
+    },
+    // Paste
+    {
+      "command": "paste",
+      "keys": "ctrl+v"
+    },
+    {
+      "command": "find",
+      "keys": "ctrl+f"
+    },
+    // Close Tab
+    {
+      "command": "closeTab",
+      "keys": "ctrl+w"
+    },
+    // Split Pane
+    {
+      "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "keys": "alt+shift+d"
+    }
+  ]
+}
