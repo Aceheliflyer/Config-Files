@@ -1,18 +1,18 @@
 [user]
   name = Jarrett Aiken
-  email = aceheliflyer@gmail.com
-  signingkey = 0F7A45C265D7FFE3
+  email = jarrett.aiken@achl.fr
+  signingkey = A27BACF67A192EF4
 [alias]
   authors = log shortlog -sne
 [commit]
-  gpgSign = true # Always sign commits
+  gpgSign = true
 [push]
-  gpgSign = false # GitHub doesn't support push signing.
+  gpgSign = false
 [tag]
-  gpgSign = true # Always sign new tags.
+  gpgSign = true
 [status]
-  showUntrackedFiles = all # Show EVERYTHING.
+  showUntrackedFiles = all
 [core]
-  editor = \"C:\\Program Files\\Microsoft VS Code\\Code.exe\" --wait
+  editor = \"C:/Program Files/Microsoft VS Code/Code.exe\" --wait
 [gpg]
-  program = "C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe"
+  program = "C:/Program Files (x86)/GnuPG/bin/gpg.exe"

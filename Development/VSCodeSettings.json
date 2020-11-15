@@ -43,7 +43,8 @@
 
   // Files
   "files.associations": {
-    ".gitignore": "properties"
+    ".gitignore": "properties",
+    "*.json": "jsonc"
   },
 
   /* *********************************************************************** *\
@@ -81,7 +82,7 @@
 
   // StandardJS
   "standard.autoFixOnSave": false, // Stop.
-  "editor.formatOnPaste": false, // STOP
+  "editor.formatOnPaste": true, // STOP
 
   // Spell Checker
   "cSpell.userWords": [
@@ -92,5 +93,9 @@
   "remote.SSH.remotePlatform": {
     "achlfr": "linux",
     "root": "linux"
-  }
+  },
+
+  // Atom Keymap
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd"
 }
