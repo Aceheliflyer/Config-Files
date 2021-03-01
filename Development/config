@@ -1,0 +1,17 @@
+# Source ######################################################################
+# https://github.com/Aceheliflyer/config/blob/master/Development/config
+
+# Config ######################################################################
+Host *
+  IdentitiesOnly yes
+Host achl.fr
+  User aceheliflyer
+  # User root
+  IdentityFile C:\Users\Achlfr\.ssh\digitalocean
+  # IdentityFile /home/aceheliflyer/.ssh/digitalocean
+  HostKeyAlgorithms ssh-ed25519
+Host github.com
+  User git
+  IdentityFile C:\Users\Achlfr\.ssh\github
+  # IdentityFile /home/aceheliflyer/.ssh/github
+  HostKeyAlgorithms ssh-rsa

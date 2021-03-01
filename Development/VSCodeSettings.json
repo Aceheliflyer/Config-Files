@@ -2,16 +2,32 @@
   /* *********************************************************************** *\
   Editor Functionality Settings
   \* *********************************************************************** */
-  "editor.tabSize": 2, // I always use 2 spaces.
-  "files.autoSave": "off", // Manual auto save, can exit if I make a mistake.
+  // Explorer
   "explorer.confirmDelete": false, // Stop asking for delete confirmation.
   "explorer.confirmDragAndDrop": false, // Stop asking for drag & drop confirmation.
-  "workbench.startupEditor": "newUntitledFile", // Just open a new file at startup.
-  "javascript.validate.enable": false, // Setting for Standardjs plugin.
-  "editor.suggestSelection": "first", // Always select the first one.
-  "workbench.editor.scrollToSwitchTabs": true, // Enable switching tabs by scrolling.
+
+  // Editor
+  "editor.tabSize": 2, // I always use 2 spaces.
+  "editor.suggestSelection": "first", // Always select the first autocomplete.
+  "editor.multiCursorModifier": "ctrlCmd", // Use ctrl for multiple cursors.
   "editor.cursorBlinking": "smooth", // Microsoft Word like behavior.
   "editor.cursorSmoothCaretAnimation": true, // Microsoft Word like behavior.
+
+  // Workbench
+  "workbench.startupEditor": "none", // Blank start screen.
+  "workbench.editor.scrollToSwitchTabs": true, // Enable switching tabs by scrolling.
+  "workbench.editor.wrapTabs": true, // Wrap tabs instead of scrolling.
+  "workbench.editor.decorations.badges": true, // Enable tab information.
+  "workbench.editor.decorations.colors": true, // Enable tab information color.
+
+  // Git
+  "git.autofetch": true, // Always fetch latest commits.
+  "git.confirmSync": false, // Of course I want to sync.
+
+  // Misc
+  "files.autoSave": "off", // Manual saving, can exit if I make a mistake.
+  "files.eol": "\n", // Always use LF line endings.
+  "javascript.validate.enable": false, // Setting for Standardjs plugin.
 
   /* *********************************************************************** *\
   Editor Visual Settings
@@ -26,25 +42,26 @@
 
   // Fonts and Whitespace
   "editor.fontFamily": "'Hasklug NF', Consolas, 'Courier New', monospace", // Nerdfont Hasklig.
-  "editor.fontLigatures": true, // Hasklig ligatures.
-  "editor.renderWhitespace": "all", // Show everything.
+  "editor.fontLigatures": true, // Enable ligatures for Hasklig.
+  "editor.renderWhitespace": "all", // Show ALL whitespace.
   "editor.rulers": [
     79 // 80 character limit ruler.
   ],
 
   // Minimap
   "editor.minimap.enabled": true, // Always show the minimap.
-  "editor.minimap.showSlider": "always", // Always show the minimap view.
+  "editor.minimap.showSlider": "always", // Always show the minimap focus.
 
   // Misc
   "window.zoomLevel": 0, // Window zoom.
-  "window.menuBarVisibility": "visible", // Always show the menu.
-  "workbench.activityBar.visible": true, // Always show the menu.
+  "window.menuBarVisibility": "visible", // Always show the alt menu.
+  "workbench.activityBar.visible": true, // Always show far left menu.
 
   // Files
   "files.associations": {
-    ".gitignore": "properties",
-    "*.json": "jsonc"
+    ".gitignore": "properties", // I'm surprised this isn't default.
+    "*.json": "jsonc", // Why doesn't json support comments in the first place?
+    ".huskyrc": "jsonc" // Format huskyrc files as json.
   },
 
   /* *********************************************************************** *\
@@ -58,19 +75,13 @@
   ],
 
   /* *********************************************************************** *\
-  Git Settings
-  \* *********************************************************************** */
-  // I actually have no clue why I have these settings set.
-  "git.autofetch": true,
-  "git.confirmSync": false,
-
-  /* *********************************************************************** *\
   Extention Settings
   \* *********************************************************************** */
-  // Global
+  // Misc
   "extensions.ignoreRecommendations": false, // Stop showing me recommended extentions.
+  "atomKeymap.promptV3Features": true,
 
-  // Settings Sync | Just in case.
+  // Settings Sync | Keeping this just in case.
   // "sync.autoDownload": false,
   // "sync.autoUpload": false,
   // "sync.forceDownload": true,
@@ -86,16 +97,21 @@
 
   // Spell Checker
   "cSpell.userWords": [
-    "mongodb"
+    "Keybase",
+    "MongoDB",
+    "SearX",
+    "Cmder",
+    "Netastream",
+    "PNPM",
+    "Spotify",
+    "Termux",
+    "Vanced",
+    "Yubico",
+    "Rainmeter"
   ],
 
   // SSH
   "remote.SSH.remotePlatform": {
-    "achlfr": "linux",
-    "root": "linux"
-  },
-
-  // Atom Keymap
-  "atomKeymap.promptV3Features": true,
-  "editor.multiCursorModifier": "ctrlCmd"
+    "achlfr": "linux"
+  }
 }
