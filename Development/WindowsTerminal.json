@@ -1,11 +1,11 @@
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
-  "defaultProfile": "{ec4eb739-cb11-49ee-91c8-417fd5032b49}",
+  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
   "copyOnSelect": false,
   "copyFormatting": false,
   "profiles": {
     "defaults": {
-      "colorScheme": "One Half Dark",
+      "colorScheme": "One Dark Pro",
       "fontFace": "Hasklug NF",
       "useAcrylic": true,
       "acrylicOpacity": 0.75
@@ -28,12 +28,18 @@
         "name": "Command Prompt",
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "commandline": "cmd.exe",
-        "hidden": false
+        "hidden": true
       },
       {
         "name": "Windows PowerShell",
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
         "commandline": "powershell.exe",
+        "hidden": true
+      },
+      {
+        "name": "PowerShell",
+        "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+        "source": "Windows.Terminal.PowershellCore",
         "hidden": false
       },
       /* ******************************************************************* *\
@@ -87,6 +93,31 @@
     Color Schemes
   \* *********************************************************************** */
   "schemes": [
+    // Snatched colors from here.
+    // https://github.com/Binaryify/OneDark-Pro/blob/ec13ca5de5292bbed1b806a0dd7fdc4f7f3c05ba/themes/OneDark-Pro.json#L1928-L1947
+    {
+      "name": "One Dark Pro",
+      "foreground": "#abb2bf",
+      "background": "#282c34",
+      // "selectionBackground": "#abb2bf",
+      // "cursorColor": "#528bff",
+      "black": "#3f4451",
+      "red": "#e05561",
+      "green": "#8cc265",
+      "yellow": "#d18f52",
+      "blue": "#4aa5f0",
+      "purple": "#c162de",
+      "cyan": "#42b3c2",
+      "white": "#e6e6e6",
+      "brightBlack": "#4f5666",
+      "brightRed": "#ff616e",
+      "brightGreen": "#a5e075",
+      "brightYellow": "#f0a45d",
+      "brightBlue": "#4dc4ff",
+      "brightPurple": "#de73ff",
+      "brightCyan": "#4cd1e0",
+      "brightWhite": "#d7dae0"
+    },
     {
       "name": "Monokai Cmder",
       "black": "#272822",
