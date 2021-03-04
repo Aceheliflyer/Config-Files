@@ -1,5 +1,5 @@
 # Source ######################################################################
-# https://github.com/Aceheliflyer/config/blob/master/Development/config
+# https://github.com/Aceheliflyer/config/blob/master/ssh/config
 
 # Config ######################################################################
 Host *
@@ -14,4 +14,14 @@ Host github.com
   User git
   IdentityFile C:\Users\Achlfr\.ssh\github
   # IdentityFile /home/aceheliflyer/.ssh/github
+  HostKeyAlgorithms ssh-rsa
+Host gitlab.com
+  User git
+  IdentityFile C:\Users\Achlfr\.ssh\gitlab
+  # IdentityFile /home/aceheliflyer/.ssh/gitlab
+  HostKeyAlgorithms ssh-ed25519
+Host bitbucket.org
+  User git
+  IdentityFile C:\Users\Achlfr\.ssh\bitbucket
+  # IdentityFile /home/aceheliflyer/.ssh/bitbucket
   HostKeyAlgorithms ssh-rsa
