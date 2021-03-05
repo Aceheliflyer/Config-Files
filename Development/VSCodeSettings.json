@@ -35,6 +35,7 @@
   // Theme Settings and Overwrites
   "workbench.colorTheme": "One Dark Pro", // One Dark Pro Gang
   "workbench.iconTheme": "material-icon-theme", // Material icons.
+  "workbench.productIconTheme": "material-product-icons", // Material theme.
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#F0DB4F", // JavaScript colored cursor.
     "tab.activeBorder": "#F0DB4F" // JavaScript colored tab border.
