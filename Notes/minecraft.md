@@ -1,5 +1,5 @@
-# Gear
-
+# Minecraft Stuffs [Because I can Never Remember]
+wrap
 ## Armor
 - **Diamond Helmet:** `Protection IV, Unbreaking III, Respiration III, Aqua Affinity, Mending`
   - `/give @s diamond_helmet{Enchantments:[{id:protection,lvl:4},{id:respiration,lvl:3},{id:aqua_affinity,lvl:1},{id:unbreaking,lvl:3},{id:mending,lvl:1}]} 1`
@@ -39,6 +39,6 @@
 ## Commands
 - Best Horse: `/minecraft:summon minecraft:horse ~ ~1 ~ {Attributes:[{Name:generic.maxHealth,Base:60.000},{Name:generic.movementSpeed,Base:0.3375},{Name:horse.jumpStrength,Base:1.0}],Type:0,Tame:1,SaddleItem:{id:329}}`
 
-## Capes
-- Nether Cape: https://www.needcoolshoes.com/banner?=fanBfeniac
-- Asexual Cape: https://www.needcoolshoes.com/banner?=pahMfsaypcpc
+## Banners/Capes
+- Nether Portal: https://www.needcoolshoes.com/banner?=fanBfeniac
+- Asexual Flag: https://www.needcoolshoes.com/banner?=pahMfsaypcpc
