@@ -1,6 +1,6 @@
 ### Because I can never remember how to do this.
 
-```
+```bat
 diskpart
 list disk
 select disk x
