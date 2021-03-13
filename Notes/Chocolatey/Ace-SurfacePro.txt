@@ -17,9 +17,12 @@ gpg4win
 hwinfo.install
 jitsi-meet-electron
 lockhunter
+microsoft-windows-terminal
 nmap
 nvm.portable
 obs-studio.install
+office-tool
+openjdk11
 postman
 powershell-core
 protonvpn

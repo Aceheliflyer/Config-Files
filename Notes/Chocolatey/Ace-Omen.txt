@@ -19,11 +19,13 @@ hwinfo.install
 icue
 jitsi-meet-electron
 lockhunter
+microsoft-windows-terminal
 minecraft-launcher
 multimc
 nmap
 nvm.portable
 obs-studio.install
+office-tool
 openjdk11
 openjdk8
 postman
