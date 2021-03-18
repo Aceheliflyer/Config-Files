@@ -1,6 +1,6 @@
 ### Because I can never remember how to do this.
 
-```bat
+```ps1
 DISM /Online /Cleanup-Image /RestoreHealth
 SFC /scannow
 ```

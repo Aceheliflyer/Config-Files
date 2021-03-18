@@ -81,6 +81,11 @@ plugins=(
   zsh-interactive-cd zsh_reload command-not-found
 )
 
+### Start Plugin Settings ###
+# Handle .nvmrc files.
+NVM_AUTOLOAD=1
+### End Plugin Settings ###
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -118,6 +123,18 @@ export PATH="$HOME/gems/bin:$PATH"
 
 # Fully upgrade the system.
 alias upgrade='sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y'
+
+# To handle *.tar.7z because I'll never remember this.
+# 'tar7z a dirName' to compress & 'tar7z e fileName' to extract.
+t7z() {
+  if [ "$1" = "a" ]; then
+    tar cf - $2 | 7z a -si $2.tar.7z
+  elif [ "$1" = "e" ]; then
+    7z e -so $2.tar.7z | tar xf -
+  else
+    echo "Not a valid value. Please use 'a' or 'e'."
+  fi
+}
 
 # Colorls
 unalias l; unalias la; unalias ll; unalias ls; unalias lsa

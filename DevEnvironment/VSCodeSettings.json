@@ -9,7 +9,6 @@
   // Editor
   "editor.tabSize": 2, // I always use 2 spaces.
   "editor.suggestSelection": "first", // Always select the first autocomplete.
-  "editor.multiCursorModifier": "ctrlCmd", // Use ctrl for multiple cursors.
   "editor.cursorBlinking": "smooth", // Microsoft Word like behavior.
   "editor.cursorSmoothCaretAnimation": true, // Microsoft Word like behavior.
 
@@ -42,7 +41,7 @@
   },
 
   // Fonts and Whitespace
-  "editor.fontFamily": "'Hasklug NF', Consolas, 'Courier New', monospace", // Nerdfont Hasklig.
+  "editor.fontFamily": "'Hasklug NF', Hasklig, 'Source Code Pro', Consolas, 'Courier New', monospace", // Nerdfont Hasklig.
   "editor.fontLigatures": true, // Enable ligatures for Hasklig.
   "editor.renderWhitespace": "all", // Show ALL whitespace.
   "editor.rulers": [
@@ -79,10 +78,10 @@
   Extention Settings
   \* *********************************************************************** */
   // Misc
-  "extensions.ignoreRecommendations": false, // Stop showing me recommended extentions.
-  "atomKeymap.promptV3Features": true,
+  "extensions.ignoreRecommendations": true, // Stop showing me recommended extentions.
+  "trailing-spaces.trimOnSave": true, // Works great in combination with jdforsythe.add-new-line-to-files.
 
-  // Settings Sync | Keeping this just in case.
+  // shan.code-settings-sync | Keeping this just in case.
   // "sync.autoDownload": false,
   // "sync.autoUpload": false,
   // "sync.forceDownload": true,
@@ -92,27 +91,30 @@
   // "sync.removeExtensions": true,
   // "sync.syncExtensions": true,
 
-  // StandardJS
-  "standard.autoFixOnSave": false, // Stop.
-  "editor.formatOnPaste": true, // STOP
+  // medo64.render-crlf
+  "code-eol.returnCharacter" : "¤", // CR
+  "code-eol.newlineCharacter": "¬", // LF
+  "code-eol.crlfCharacter": "¤¬", // CRLF
+  "code-eol.highlightNonDefault": true, // Show incorrect line endings.
+  "code-eol.highlightExtraWhitespace": false, // Use Trailing Spaces Extention instead.
 
-  // Spell Checker
+  // ms-vscode-remote.vscode-remote-extensionpack
+  "remote.SSH.remotePlatform": {
+    "achl.fr": "linux"
+  },
+
+  // streetsidesoftware.code-spell-checker
   "cSpell.userWords": [
     "Keybase",
     "MongoDB",
     "SearX",
     "Cmder",
-    "Netastream",
+    "Metastream",
     "PNPM",
     "Spotify",
     "Termux",
     "Vanced",
     "Yubico",
     "Rainmeter"
-  ],
-
-  // SSH
-  "remote.SSH.remotePlatform": {
-    "achlfr": "linux"
-  }
+  ]
 }

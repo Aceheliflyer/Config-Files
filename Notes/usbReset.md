@@ -1,6 +1,6 @@
 ### Because I can never remember how to do this.
 
-```bat
+```ps1
 diskpart
 list disk
 select disk x

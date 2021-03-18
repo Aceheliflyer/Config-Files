@@ -147,35 +147,12 @@
   \* *********************************************************************** */
   "keybindings": [
     // Copy
-    {
-      "command": {
-        "action": "copy",
-        "singleLine": false
-      },
-      "keys": "ctrl+c"
-    },
+    { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+c" },
     // Paste
-    {
-      "command": "paste",
-      "keys": "ctrl+v"
-    },
-    {
-      "command": "find",
-      "keys": "ctrl+f"
-    },
-    // Close Tab
-    {
-      "command": "closeTab",
-      "keys": "ctrl+w"
-    },
-    // Split Pane
-    {
-      "command": {
-        "action": "splitPane",
-        "split": "auto",
-        "splitMode": "duplicate"
-      },
-      "keys": "alt+shift+d"
-    }
+    { "command": "paste", "keys": "ctrl+v" },
+    // Find
+    { "command": "find", "keys": "ctrl+shift+f" },
+    // Auto Split Pane
+    { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" }
   ]
 }
