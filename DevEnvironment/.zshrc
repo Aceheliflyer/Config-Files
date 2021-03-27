@@ -1,3 +1,7 @@
+if [[ ! -f ~/.antigen/antigen/antigen.zsh ]]; then
+  git clone --branch master https://github.com/zsh-users/antigen.git "$HOME/.antigen/antigen"
+fi
+
 # Load Powerlevel10k prompt.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -5,22 +9,32 @@ fi
 
 # Antigen Configuration #######################################################
 # Initialize antigen, load OMZ and powerlevel10k.
-source $HOME/antigen.zsh
+source "$HOME/.antigen/antigen/antigen.zsh"
 antigen use oh-my-zsh
 antigen theme romkatv/powerlevel10k
 
 antigen bundles <<EOBUNDLES
   # Load internal plugins.
-  git vscode gpg-agent fzf thefuck nvm
-  zsh-interactive-cd zsh_reload command-not-found
+  command-not-found
+  fzf
+  git
+  gpg-agent
+  nvm
+  ssh-agent
+  thefuck
+  vscode
+  zsh-interactive-cd
 
   # Load external plugins.
+  MichaelAquilina/zsh-you-should-use
+  zsh-users/zsh-completions
   zsh-users/zsh-autosuggestions
-  zsh-users/zsh-syntax-highlighting
+  zsh-users/zsh-syntax-highlighting # Always put at the end.
 EOBUNDLES
 
 # Plugin Settings
-NVM_AUTOLOAD=1
+export NVM_AUTOLOAD=1
+export YSU_HARDCORE=1
 
 # Apply everything.
 antigen apply
@@ -39,7 +53,7 @@ alias upgrade="sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y"
 # Colorls
 unalias l; unalias la; unalias ll; unalias ls; unalias lsa
 source $(dirname $(gem which colorls))/tab_complete.sh
-alias ls="colorls" # Color replacement for ls.
+alias ls="colorls --gs" # Color replacement for ls.
 alias la="ls -A --sd" # Simple list all.
 alias li="ls -al --sd" # Detailed list all.
 alias lf="ls -Af1" # Simple list all files.
