@@ -13,7 +13,7 @@ source "$HOME/.antigen/antigen/antigen.zsh"
 antigen use oh-my-zsh
 antigen theme romkatv/powerlevel10k
 
-antigen bundles <<EOBUNDLES
+antigen bundles <<BundleList
   # Load internal plugins.
   command-not-found
   fzf
@@ -21,16 +21,14 @@ antigen bundles <<EOBUNDLES
   gpg-agent
   nvm
   ssh-agent
-  thefuck
   vscode
-  zsh-interactive-cd
 
   # Load external plugins.
   MichaelAquilina/zsh-you-should-use
   zsh-users/zsh-completions
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-syntax-highlighting # Always put at the end.
-EOBUNDLES
+BundleList
 
 # Plugin Settings
 export NVM_AUTOLOAD=1
@@ -44,8 +42,8 @@ antigen apply
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
+# export GEM_HOME="$HOME/gems"
+# export PATH="$HOME/gems/bin:$PATH"
 
 # Fully upgrade the system.
 alias upgrade="sudo apt update; sudo apt upgrade -y; sudo apt autoremove -y"
@@ -66,7 +64,7 @@ t7z() {
   if [ "$1" = "a" ]; then
     tar cf - $2 | 7z a -si $2.tar.7z
   elif [ "$1" = "e" ]; then
-    7z e -so $2.tar.7z | tar xf -
+    7z e -so $2 | tar xf -
   else
     echo "Not a valid value. Please use 'a' or 'e'."
   fi
